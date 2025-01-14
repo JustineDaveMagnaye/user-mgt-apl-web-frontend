@@ -1,0 +1,210 @@
+/* Add this to set the background to navy blue */
+body {
+    background-color: #001f3f; /* Navy blue color */
+}
+
+.semi-body {
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    font-family: sans-serif;
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 20px; /* Add padding for better spacing */
+    background-color: transparent; /* Ensure the semi-body doesn't override the background */
+}
+
+.form-box-login {
+    width: 120%; /* Set width to a percentage for better responsiveness */
+    max-width: 500px; /* Max width to ensure it doesn't get too wide on larger screens */
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+    border-radius: 12px;
+    color: black;
+    margin-top: 48px;
+    padding: 27px;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+}
+
+.form-container-login {
+    width: 100%; /* Full width for container */
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    margin: 0;
+    padding: 0 2vw;
+}
+
+.header {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    width: 150px;
+    height: 100px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Field box styles */
+.field-box {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.field-box label {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 5px;
+}
+
+.insert {
+    position: relative;
+    width: 100%;
+}
+
+.insert input {
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px 45px 5px 20px;
+    border: 1px solid #ccc;
+}
+
+.insert .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+form .forgot-password-link {
+    width: 100%;
+    display: grid;
+    justify-items: end;
+    align-content: start;
+    margin: 0;
+    padding: 0;
+}
+
+.forgot-password-link a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #0174BE;
+    margin: 0;
+    padding: 0;
+}
+
+button.login {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #0174BE;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+button.login:hover {
+    background-color: #005B96;
+}
+
+form .register-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #005B96;
+    margin-top: 5px;
+}
+
+.noAcc {
+    margin-top: 5px;
+}
+
+.click {
+    margin-left: 2px;
+    text-decoration: none;
+    color: #005B96;
+}
+
+.error-message {
+    color: red;
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .form-box-login {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 24px; /* Smaller header size */
+    }
+
+    button.login {
+        width: 80%; /* Wider button on smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .insert input {
+        height: 45px; /* Smaller input height */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-box-login {
+        width: 100%; /* Full width on mobile */
+        padding: 15px; /* Reduced padding */
+    }
+
+    .header h1 {
+        font-size: 20px; /* Even smaller header size */
+    }
+
+    button.login {
+        width: 100%; /* Full width button */
+        font-size: 14px; /* Keep font size smaller */
+    }
+
+    .insert input {
+        height: 40px; /* Further reduced input height */
+    }
+}

@@ -1,0 +1,153 @@
+.admin-body {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+  min-width: 100%;
+  align-content: start;
+  padding-top: 60px; /* Prevent content overlap with navbar */
+}
+
+.admin-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  padding: 27px;
+  margin-top: 20px;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+}
+
+.admin-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.search-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.table-container {
+  padding: 0;
+  max-height: 400px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-device-id {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.reset-device-id {
+  cursor: pointer;
+  margin-left: 10px;
+  color: green;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 768px) {
+  .admin-header h2 {
+    font-size: 20px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  th:nth-child(1), td:nth-child(1) {
+    width: 15%;
+  }
+
+  th:nth-child(2), td:nth-child(2) {
+    width: 25%;
+  }
+
+  th:nth-child(3), td:nth-child(3),
+  th:nth-child(4), td:nth-child(4) {
+    width: 30%;
+  }
+
+  th:nth-child(5), td:nth-child(5) {
+    width: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header h2 {
+    font-size: 18px;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  th:nth-child(1), td:nth-child(1) {
+    width: 25%;
+  }
+
+  th:nth-child(2), td:nth-child(2),
+  th:nth-child(3), td:nth-child(3) {
+    display: none;
+  }
+
+  th:nth-child(4), td:nth-child(4),
+  th:nth-child(5), td:nth-child(5) {
+    width: 50%;
+  }
+}
